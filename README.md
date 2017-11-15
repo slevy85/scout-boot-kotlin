@@ -9,6 +9,10 @@ This repository is a kotlin version of the [minimal archetype](https://github.co
 [Spring Boot with Kotlin](https://spring.io/blog/2016/02/15/developing-spring-boot-applications-with-kotlin)  
 [Eclipse Scout with Spring Boot](https://github.com/BSI-Business-Systems-Integration-AG/ScoutBoot)  
 
+### Prerequistes
+- Java 8
+- Maven 3
+
 ### Usage
 ```
 git clone https://github.com/slevy85/scout-boot-kotlin.git
