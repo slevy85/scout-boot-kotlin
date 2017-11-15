@@ -1,7 +1,7 @@
 # scout-boot-kotlin
 Demo using Spring Boot with Eclipse Scout with Kotlin lang
 
-This repository is a kotlin version of the [minimal archetype](https://github.com/BSI-Business-Systems-Integration-AG/ScoutBoot) proposed by Eclipse scout.
+This repository is a kotlin version of the [ScoutBoot minimal archetype](https://github.com/BSI-Business-Systems-Integration-AG/ScoutBoot) proposed by Eclipse scout.
 
 ### Information
 [Kotlin](https://kotlinlang.org/)  
