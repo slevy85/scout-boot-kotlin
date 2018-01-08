@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  tasks:
+    image: scout-boot-kotlin-standard.standard:1.0-SNAPSHOT
+    container_name: standard_app
+    command: >
+      java -jar /opt/standard-1.0-SNAPSHOT.jar 
+        --spring.datasource.url=jdbc:postgresql://db:5432/postgres
+        --spring.datasource.username=postgres
+        --spring.datasource.password=s3cret
+        --spring.jpa.hibernate.ddl-auto=update
+    ports:
+      - "8080:8080"
+    networks:
+      - tasks
+    depends_on:
+      - db
+  db:
+    image: postgres:9.6
+    container_name: standard_db
+    networks:
+      - standard
+    volumes:
+      - data:/var/lib/postgresql/data
+
+volumes:
+  data:
+
+networks:
+  standard:
+    driver: bridge
+
